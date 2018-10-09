@@ -1,32 +1,16 @@
-const skeletorLocalServer = require('./index');
+const skeletorImageOptimizer = require('./index');
 
-let express;
-jest.mock('express');
-jest.mock('opn');
+test('run() returns a complete status object', () => {
+	const config = {};
 
-const logger = {
-    info: () => {},
-    error: () => {}
-};
-const options = {logger};
-let logInfoSpy;
+	const expectedResponse = {
+		status: 'complete',
+		message: 'Sample plugin complete'
+	};
 
-describe('imagemin plugin', () => {
+    expect.assertions(1);
 
-    beforeEach(() => {
-        express = require('express');
-        logInfoSpy = jest.spyOn(logger, 'info');
-    });
-
-    afterEach(() => {
-        express.__resetServer();
-        logInfoSpy.mockReset();
-    });
-
-    it('should something something', async () => {
-        const something = "something";
-        const config = {
-            currentDirectory: 'testDir'
-        };
+	return skeletorImageOptimizer().run(config).then(response => {
+        expect(response).toEqual(expectedResponse);
     });
 });
