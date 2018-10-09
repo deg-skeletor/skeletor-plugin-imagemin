@@ -1,0 +1,15 @@
+anguage: node_js
+node_js:
+- node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: jlawhorn@degdigital.com
+  api_key:
+    secure: 
+  on:
+    branch: master
+    tags: true
+    repo: deg-skeletor/skeletor-plugin-imagemin

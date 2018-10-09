@@ -1,0 +1,36 @@
+{
+    "name": "@deg-skeletor/plugin-imagemin",
+    "version": "0.1.0",
+    "description": "A Skeletor plugin to run imagemin.",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint index.js"
+    },
+    "author": "Joseph Lawhorn <jlawhorn@degdigital.com>",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/deg-skeletor/skeletor-plugin-imagemin.git"
+    },
+    "peerDependencies": {
+        "@deg-skeletor/core": "^1.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.6.1",
+        "jest": "^23.6.0"
+    },
+    "dependencies": {
+        "image-min": "^0.3.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "skeletor",
+        "skeletor-plugin",
+        "imagemin",
+        "optimization",
+        "images"
+    ]
+}
