@@ -14,14 +14,19 @@
         "url": "git+https://github.com/deg-skeletor/skeletor-plugin-imagemin.git"
     },
     "peerDependencies": {
-        "@deg-skeletor/core": "^1.1.0"
+        "@deg-skeletor/core": "^1.1.1"
     },
     "devDependencies": {
-        "eslint": "^5.6.1",
-        "jest": "^23.6.0"
+        "eslint": "^5.16.0",
+        "jest": "^24.8.0"
     },
     "dependencies": {
-        "image-min": "^0.3.2"
+        "imagemin": "^6.1.0",
+        "imagemin-jpegtran": "^6.0.0",
+        "imagemin-pngquant": "^7.0.0",
+        "imagemin-webp": "^5.0.0",
+        "imagemin-svgo": "^7.0.0",
+        "imagemin-giflossy": "^5.1.10"
     },
     "publishConfig": {
         "access": "public"
